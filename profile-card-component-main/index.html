@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+
+    body {
+      margin:0 auto;
+      width:100%;
+      overflow: hidden;
+      position: relative;
+      background-color: #19a1ad;
+    }
+
+    .img-top {
+      position:fixed;
+      top:-40%;
+      left:-10%;
+    }
+
+    .img-bottom {
+      position:fixed;
+      top:50%;
+      left:60%;
+    }
+
+    .container {
+      background-color: white;
+      position: fixed;
+      width: 300px;
+      height: 380px;
+      border:0;
+      border-radius:15px;
+      top:35%;
+      left:42%;
+    }
+
+
+    .white {
+      height:100px;
+      background-image: url("./images/bg-pattern-card.svg");
+      border-top-left-radius:15px;
+      border-top-right-radius:15px;
+    }
+
+    .victor {
+      border: 5px solid white;
+      border-radius: 50%;
+      margin-top:50px;
+      margin-left:100px;
+    }
+
+    .name {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top:70px;
+      text-align: center;
+    }
+
+    .age {
+      margin-left:5px;
+      font-weight: normal;
+      color:gray;
+    }
+
+    .city {
+      color:gray;
+      text-align: center;
+      font-size: 16px;
+      margin-top:5px;
+    }
+    
+    hr{
+      margin-top:30px;
+      border: 1px solid lightgrey;
+    }
+
+    .grid-container {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin-top: 40px;
+    }
+
+
+    .bold {
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .descr {
+      font-size: 16px;
+      color: lightgray;
+      text-align: center;
+      padding-top: 5px;
+    }
+
+  </style>
+
+</head>
+<body>
+<img class ="img-top" src="./images/bg-pattern-top.svg"alt=""> 
+<img class ="img-bottom"src="./images/bg-pattern-bottom.svg"alt=""> 
+
+<div class="container"> 
+    <div class ="white">
+      <img class = "victor" src="./images/image-victor.jpg" alt="">
+    </div>
+      <div class ="name">Victor Crest <span class ="age">26</span></div>
+      <div class="city">London</div>
+      <hr/>
+
+      <div class="grid-container">
+        <div>
+          <div class="bold">
+            80K
+          </div>
+          <div class="descr">
+            Followers
+          </div>
+        </div>
+
+        <div>
+          <div class="bold">
+            803K
+          </div>
+          <div class="descr">
+            Likes
+          </div>
+        </div>
+
+        <div>
+          <div class="bold">
+            1.4K
+          </div>
+          <div class="descr">
+            Photos
+          </div>
+        </div> 
+      </div>
+ 
+</div>
+
+</body>
+</html>
